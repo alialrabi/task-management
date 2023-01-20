@@ -1,0 +1,4 @@
+id;name;description;position;created_by;last_modified_by;created_date;last_modified_date;status;domain;organization_id
+100;group 100;description 100;1;ali;ali;2022-01-26T01:51:39;2022-01-26T01:51:39;ACTIVE;DEV;100
+200;group 200;description 200;2;ali;ali;2022-01-26T01:51:39;2022-01-26T01:51:39;ACTIVE;DEV;100
+300;group 300;description 300;3;ali;ali;2022-01-26T01:51:39;2022-01-26T01:51:39;ACTIVE;DEV;200
