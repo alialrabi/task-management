@@ -9,6 +9,6 @@ Postgres,
 Rest API,
 Liquibase,
 
-UI
+# UI repo
 
-# https://github.com/alialrabi/task-management-react
+ https://github.com/alialrabi/task-management-react
