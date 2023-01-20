@@ -2,12 +2,12 @@
 
 #Technologies
 
-Spring boot
-spring security
-Spring data
-Postgres
-Rest API
-Liquibase
+Spring boot,
+spring security,
+Spring data,
+Postgres,
+Rest API,
+Liquibase,
 
 UI
 
