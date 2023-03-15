@@ -1,0 +1,8 @@
+id;username;email;activated;created_by;last_modified_by;password
+100;admin;admin@gmail.com;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+200;ali-sys;ali@gmail;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+210;ali-admin;ali@gmail;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+212;ali-user;ali@gmail;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+214;ali-member;ali@gmail;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+216;ali-all;ali@gmail;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O
+218;ali;eng.aliali2011@gmail.com;TRUE;ali;ali;$2a$10$HEX9i/o5WhM6dbBbyCftZuHk2foVxoCBn5SySDrd49rS7MdT/E49O

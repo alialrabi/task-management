@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+  xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd 
+   http://www.liquibase.org/xml/ns/dbchangelog 
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+	<changeSet id="2000000" author="ali">
+	    <createTable tableName="taskgroup">
+	      <column name="id" type="bigint">
+	        <constraints primaryKey="true" primaryKeyName="taskgroup_pkey"/>
+	      </column>
+	        <column name="name" type="varchar(100)">
+	        <constraints nullable="false" />
+	      </column>
+	      <column name="description" type="varchar(254)">
+	        <constraints nullable="false" />
+	      </column>
+		   <column name="position" type="int">
+	        <constraints nullable="false" />
+	      </column>
+	      <column name="icon" type="binary">
+	        <constraints nullable="true" />
+	      </column>
+	      <column name="icon_content_type" type="varchar(254)">
+	      </column>
+		  <column name="created_by" type="varchar(50)">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="last_modified_by" type="varchar(50)">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="created_date" type="datetime">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="last_modified_date" type="datetime">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="status" type="varchar(50)">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="domain" type="varchar(50)">
+	        <constraints nullable="false" />
+	      </column>
+		  <column name="organization_id" type="bigint">
+                <constraints nullable="false" />
+          </column>
+	    </createTable>
+
+		<loadData
+                  file="db/data/taskgroup.csv"
+                  separator=";"
+                  tableName="taskgroup">
+            <column name="id" type="numeric"/>
+            <column name="name" type="string"/>
+            <column name="description" type="string"/>
+			<column name="position" type="numeric"/>
+            <column name="created_by" type="string"/>
+            <column name="created_date" type="datetime"/>
+            <column name="last_modified_by" type="string"/>
+            <column name="last_modified_date" type="datetime"/>
+		    <column name="status" type="string"/>
+            <column name="domain" type="string"/>
+			<column name="taskgroup_id" type="numeric"/>
+        </loadData>
+
+	</changeSet>	    
+	    	
+</databaseChangeLog>
+		
+		

@@ -1,0 +1,58 @@
+spring:
+   datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/task-management10
+      username: postgres
+      password: postgres
+
+   liquibase:
+      change-log: classpath:db/changelog/db.changelog-master.xml
+  
+   devtools:
+      restart:
+         enabled: true
+      livereload:
+         enabled: true
+      
+   mail: 
+      host: smtp.mailgun.org
+      port: 587
+      username: postmaster@sandboxea67e710f978478aa9e655880a1638fe.mailgun.org
+      password: 3812578603d61e2208c145329c227ede-2bab6b06-e0c1bed7
+      properties:
+          mail:
+            transport:
+              protocol: smtp
+          properties:
+              mail:
+                 smtp:
+                    starttls:
+                       enable: true
+                       required: true
+                    auth: true
+
+cache:
+   type: redis
+   redis:
+      cache-null-values: true
+
+server: 
+   port: 8080
+
+baseUrl: http://localhost:8080/api
+
+logging: 
+    level:
+      net:
+         ttddyy:
+            dsproxy: 
+               listener: debug
+    
+   #  org: 
+   #    hibernate: 
+   #          SQL: DEBUG
+   #          type: 
+   #              descriptor: 
+   #                 sql:
+   #                   BasicBinder: TRACE              
+
